@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+.body {
+  font-family: 'Old Standard TT', serif;
+  background-image: linear-gradient(to right, #FFF5EB, #fae3cc, #F2DCC7, #FFA552); }
+
+/*HEADER INICIO*/
+.logo {
+  padding-top: 28px; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-end;
+  width: 100%;
+  background-color: black; }
+
+nav {
+  padding-top: 20px; }
+  nav ul {
+    list-style: none; }
+    nav ul li {
+      display: inline-block;
+      margin: 5px; }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        margin: 10px 10px 10px 10px;
+        transition: all 300ms ease; }
+      nav ul li a:hover {
+        background-color: #FFA552;
+        color: black; }
+
+/*HEADER FINAL*/
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto; }
+
+/*INDEX BANNER INICIO*/
+.cover {
+  background-image: url("../media/onstage.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 650px;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold; }
+  .cover .videoPosition {
+    position: absolute;
+    bottom: 5px; }
+    .cover .videoPosition .videoTitle {
+      font-weight: 700;
+      font-size: 30px;
+      color: white;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      border-bottom: 2px solid;
+      padding-bottom: 15px;
+      margin-bottom: 10px; }
+    .cover .videoPosition .videoWatch {
+      font-weight: 400;
+      font-size: 18px;
+      color: #ffffff;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      padding-right: 30px;
+      position: absolute;
+      left: 1%; }
+
+div a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 300ms ease; }
+
+/*INDEX BANNER FINAL*/
+/*BANNER ALTERNATIVO*/
+.cover1 {
+  background-image: url("../media/bannercrop.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 222px;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold; }
+
+/*TITULOS*/
+.h1 {
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-weight: bold; }
+
+.h2 {
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-weight: bold; }
+
+/*INDEX EXPLORA INICIO*/
+.map {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 0px; }
+  .map div {
+    margin: 10px;
+    text-align: center; }
+    .map div a img {
+      width: 250px;
+      height: 200px; }
+    .map div p {
+      font-size: 11px;
+      color: #CCCCCC;
+      padding-top: 20px; }
+      .map div p a:hover {
+        background-color: #FFA552;
+        color: white; }
+
+.link {
+  color: black;
+  padding: 5px 20px;
+  text-decoration: none;
+  border: 1px solid black; }
+
+/*INDEX EXPLORA FINAL*/
+/*TOUR INICIO*/
+.grid {
+  display: grid;
+  grid-template-areas: "title1 title2 title3" "date1 place1 ticket1" "date2 place2 ticket2" "date3 place3 ticket3" "date4 place4 ticket4" "date5 place5 ticket5" "date6 place6 ticket6";
+  grid-template-columns: 120px 300px 100px;
+  grid-template-rows: 25px repeat(6, 40px);
+  justify-content: center; }
+  .grid div {
+    color: black;
+    font-weight: bold; }
+
+@media screen and (max-width: 620px) {
+  .grid {
+    width: 100%;
+    grid-template-columns: 100px 200px 100px;
+    grid-template-rows: 25px repeat(6, 60px);
+    padding: 35px 0px; } }
+
+@media screen and (max-width: 500px) {
+  .grid {
+    width: 100%;
+    grid-template-columns: 80px 160px 80px;
+    grid-template-rows: 25px repeat(6, 80px);
+    padding: 35px 0px; } }
+
+.border {
+  border: 1px solid black; }
+
+div#title1 {
+  grid-area: title1; }
+
+div#title2 {
+  grid-area: title2; }
+
+div#title3 {
+  grid-area: title3; }
+
+div#date1 {
+  grid-area: date1; }
+
+div#date2 {
+  grid-area: date2; }
+
+div#date3 {
+  grid-area: date3; }
+
+div#date4 {
+  grid-area: date4; }
+
+div#date5 {
+  grid-area: date5; }
+
+div#date6 {
+  grid-area: date6; }
+
+div#place1 {
+  grid-area: place1; }
+
+div#place2 {
+  grid-area: place2; }
+
+div#place3 {
+  grid-area: place3; }
+
+div#place4 {
+  grid-area: place4; }
+
+div#place5 {
+  grid-area: place5; }
+
+div#place6 {
+  grid-area: place6; }
+
+div#ticket1 {
+  grid-area: ticket1; }
+
+div#ticket2 {
+  grid-area: ticket2; }
+
+div#ticket3 {
+  grid-area: ticket3; }
+
+div#ticket4 {
+  grid-area: ticket4; }
+
+div#ticket5 {
+  grid-area: ticket5; }
+
+div#ticket6 {
+  grid-area: ticket6; }
+
+/*TOUR FINAL*/
+/*FOOTER INICIO*/
+.footer {
+  width: 100%;
+  background-color: black; }
+  .footer .group-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px; }
+    .footer .group-1 .box figure {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .footer .group-1 .box figure img {
+        width: 200px; }
+    .footer .group-1 .box h2 {
+      color: white;
+      margin-bottom: 25px;
+      font-size: 20px; }
+    .footer .group-1 .socialNetwork a {
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      color: white;
+      margin-right: 10px;
+      background-color: black;
+      text-align: center;
+      transition: all 300ms ease; }
+    .footer .group-1 .socialNetwork a:hover {
+      color: #FFA552; }
+  .footer .group-2 {
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: white; }
+    .footer .group-2 small {
+      font-size: 15px; }
+
+@media only screen and (max-width: 800px) {
+  .footer .group-1 {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px; } }
+
+/*FOOTER FINAL*/
+/*VIDEOS INICIO*/
+iframe {
+  width: 560px;
+  height: 315px; }
+
+@media only screen and (max-width: 560px) {
+  iframe {
+    width: 280px;
+    height: 154px; } }
+
+/*VIDEOS FINAL*/
+/*404 INICIO*/
+.body1 {
+  font-family: 'Old Standard TT', serif;
+  background-color: #f9a542;
+  margin: 0;
+  padding: 0;
+  height: 100vh; }
+  .body1 .notFound {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center; }
+    .body1 .notFound .h11 {
+      color: #272522;
+      font-size: 20px;
+      padding: 20px; }
+    .body1 .notFound button {
+      padding: 15px 30px;
+      border-radius: 15px;
+      border: none;
+      color: #f9a542;
+      background: #272522; }
+    .body1 .notFound button:hover {
+      background-color: #b35b08;
+      color: white; }
+
+/*404 FINAL*/
+/*VIDEOS FINAL*/
